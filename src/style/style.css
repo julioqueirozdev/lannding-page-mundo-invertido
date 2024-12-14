@@ -89,6 +89,7 @@ header{
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: 2;
 }
 
 header::before{
@@ -135,7 +136,9 @@ header::before{
     width: 100%;
     max-width: 900px;
     position: absolute;
+    z-index: -1;
 }
+
 
 .world-characters#top-characters{
     height: 100%;
@@ -143,12 +146,8 @@ header::before{
 
     mask: url(../images/characters/kids-on-the-bike.svg) bottom / 100% no-repeat;
     -webkit-mask: url(../images/characters/kids-on-the-bike.svg) bottom / 100% no-repeat;
-
-    /* background-image: url(../images/characters/kids-on-the-bike.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain; */
 }
+    
 
 .world-characters#bottom-characters{
     height: 500px;
@@ -160,12 +159,6 @@ header::before{
 
     mask: url(../images/characters/inverted-world-monster.svg) bottom / 100% no-repeat;
     -webkit-mask: url(../images/characters/inverted-world-monster.svg)bottom / 100% no-repeat;
-
-    /* background-image: url(../images/characters/inverted-world-monster.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain; */
-
 }
 
 main{
